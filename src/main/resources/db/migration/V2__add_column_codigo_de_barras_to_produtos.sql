@@ -1,0 +1,1 @@
+ALTER TABLE produtos ADD COLUMN codigo_de_barras VARCHAR(255);

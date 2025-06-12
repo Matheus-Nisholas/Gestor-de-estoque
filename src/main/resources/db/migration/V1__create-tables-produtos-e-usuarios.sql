@@ -1,0 +1,13 @@
+CREATE TABLE produtos (
+    id BIGSERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    quantidade INTEGER NOT NULL,
+    preco DECIMAL(10, 2) NOT NULL,
+    categoria VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE usuarios (
+    id BIGSERIAL PRIMARY KEY,
+    login VARCHAR(255) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL
+);
